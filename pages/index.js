@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:3001');
+// const socket = io('http://localhost:3001');
+const socket = io('https://main.d343lnj5fo6nfk.amplifyapp.com');
+
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([]);
